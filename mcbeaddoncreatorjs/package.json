@@ -1,0 +1,11 @@
+{
+  "name": "mcbeaddoncreatorjs",
+  "version": "1.0.0",
+  "description": "A MCBE Addon creator package for NodeJS",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Noinkin",
+  "license": "ISC"
+}
