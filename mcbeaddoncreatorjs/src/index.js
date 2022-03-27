@@ -1,4 +1,4 @@
 'use strict';
 
 /* Block Classes */
-exports.Test = require('./test/test')
+exports.MCBE = require('./test/test')
