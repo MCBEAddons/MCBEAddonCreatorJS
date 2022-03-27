@@ -1,4 +1,4 @@
-class MCBE {
+class Block {
 
     #name = null
     #id = null
@@ -6,7 +6,7 @@ class MCBE {
     #modelFile = null
 
     // We define a static Builder class within `MCBE`
-    static BlockBuilder = class {
+    static Builder = class {
         // the builder class will have the same attributes as
         // the parent
         #name = null
@@ -69,4 +69,4 @@ model file: ${this.#modelFile}`
 
 }
 
-module.exports = MCBE
+module.exports = Block

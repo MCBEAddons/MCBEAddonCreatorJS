@@ -1,4 +1,8 @@
 'use strict';
 
-/* Block Classes */
-exports.MCBE = require('./test/test')
+/* Block Functions/Classes */
+exports.Block = require('./block/block')
+
+
+/* Compile Functions/Classes */
+exports.compile = require('./compiler/compile')
