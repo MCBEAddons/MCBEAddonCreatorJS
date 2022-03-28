@@ -5,4 +5,4 @@ exports.Block = require('./block/block')
 
 
 /* Compile Functions/Classes */
-exports.compile = require('./compiler/compile')
+exports.Compiler = require('./compiler/compiler')
