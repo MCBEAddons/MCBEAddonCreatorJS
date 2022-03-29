@@ -1,8 +1,9 @@
 'use strict';
 
-/* Block Functions/Classes */
+/* Block Classes */
 exports.Block = require('./block/block')
 
 
-/* Compile Functions/Classes */
+/* Compile Classes */
 exports.Compiler = require('./compiler/compiler')
+

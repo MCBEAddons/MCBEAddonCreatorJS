@@ -13,14 +13,22 @@
 ## Minecraft Bedrock Edition Addon Creator JS is a tool which allows you to use NodeJS and create addons without having to type JSON all day.
 
 ```js
-const { Block } = require('mcbeaddoncreatorjs')
+const { Block, Compiler, BPManifest } = require('mcbeaddoncreatorjs')
 
-const block = new Block.Builder()
+const block = new Block()
 	.setName('MyBlock')
 	.setId(1000)
 	.setTextureFile('./assets/myBlock.png')
 	.setModelFile('./assets/myBlock.geo.json')
-	.build()
-```
 
-Needs updating ^
+const bpManifest = new BPManifest()
+	.setName('My addon')
+	.setDescription('My addon description')
+	.setAuthor('Example')
+	.setWebsite('Example.com')
+
+ const compiler = new Compiler()
+	.setBPManifest(bpManifest.toJSON())
+	.setRPManifest(rpManifest.toJSON())
+	.setComponents([ block ])
+```

@@ -74,50 +74,31 @@ let standardBPManifest = {
 
 class Compiler {
 
-    #manifestRP = standardRPManifest
-    #manifestBP = standardBPManifest
-    #components = null
+	constructor() {
+        this.manifestRP = standardRPManifest
+        this.manifestBP = standardBPManifest
+        this.components = []
+    }
+
+	setRPManifest(manifestRP) {
+        this.manifestRP = manifestRP
+        return this
+    }
+
+    setBPManifest(manifestBP) {
+        this.manifestBP = manifestBP
+        return this
+    }
+
+    setComponents(components) {
+        this.components = components
+        return this
+    }
 	
-    static Compile = class {
-		
-        #manifestRP = standardRPManifest
-        #manifestBP = standardBPManifest
-        #components = null
-		
-        setRPManifest(manifestRP) {
-            this.#manifestRP = manifestRP
-            return this
-        }
-
-        setBPManifest(manifestBP) {
-            this.#manifestBP = manifestBP
-            return this
-        }
-
-        setComponents(components) {
-            this.#components = components
-            return this
-        }
-		
-        compile() {
-            const compiled = new Compiler(
-                this.#manifestRP,
-                this.#manifestBP,
-                this.#components)
-            return compiled
-        }
-    }
-
-    constructor(manifestRP, manifestBP, components) {
-        this.#manifestRP = manifestRP
-        this.#manifestBP = manifestBP
-        this.#components = components
-    }
-
-    compile() {
+	compile() {
 		console.log('Compiling')
-		let data1 = JSON.stringify(this.#manifestRP)
-		let data2 = JSON.stringify(this.#manifestBP)
+		let data1 = JSON.stringify(this.manifestRP)
+		let data2 = JSON.stringify(this.manifestBP)
     	fs.mkdirSync('./builds', { recursive: true })
 		fs.mkdirSync('./builds/rp', { recursive: true })
 		fs.mkdirSync('./builds/bp', { recursive: true })
