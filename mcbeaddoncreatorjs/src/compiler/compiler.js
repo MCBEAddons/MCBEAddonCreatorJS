@@ -32,7 +32,8 @@ let standardRPManifest = {
   ],
   "metadata": {
     "authors": [
-      "Noinkin#5026"
+      "Noinkin#5026",
+	  "TheAwesomeGuy47#8156"
     ],
     "url": "MCBEAddons.tk"
   }
@@ -68,7 +69,8 @@ let standardBPManifest = {
   ],
   "metadata": {
     "authors": [
-      "Noinkin#5026"
+      "Noinkin#5026",
+	  "TheAwesomeGuy47#8156"
     ],
     "url": "MCBEAddons.tk"
   }

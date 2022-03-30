@@ -7,7 +7,7 @@ class BPManifest {
 	constructor() {
         this.name = "MCBE Addon Creator JS"
         this.manifestBP = "This addon was made using MCBE Addon Creator JS"
-        this.author = "Noinkin#5026"
+        this.author = "Noinkin#5026, TheAwesomeGuy47#8156"
 		this.website = "MCBEAddons.tk"
     }
 
