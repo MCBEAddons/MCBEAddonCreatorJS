@@ -11,6 +11,9 @@
 ```
 
 ![Issues](https://img.shields.io/github/issues/MCBEAddons/MCBEAddonCreatorJS.svg?style=for-the-badge&logo=appveyor)
+![Forks](	https://img.shields.io/github/forks/MCBEAddons/MCBEAddonCreatorJS.svg?style=for-the-badge&logo=appveyor)
+![Stars](https://img.shields.io/github/stars/MCBEAddons/MCBEAddonCreatorJS.svg?style=for-the-badge&logo=appveyor)
+![License](	https://img.shields.io/github/license/MCBEAddons/MCBEAddonCreatorJS.svg?style=for-the-badge&logo=appveyor)
 
 ## Minecraft Bedrock Edition Addon Creator JS is a tool which allows you to use NodeJS and create addons without having to type JSON all day.
 
