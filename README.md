@@ -10,6 +10,8 @@
  \___|_|_\___/_/ \_\_| \___/|_|_\  \__/|___/
 ```
 
+![Issues](https://img.shields.io/github/issues/MCBEAddons/MCBEAddonCreatorJS.svg?style=for-the-badge&logo=appveyor)
+
 ## Minecraft Bedrock Edition Addon Creator JS is a tool which allows you to use NodeJS and create addons without having to type JSON all day.
 
 ```js
