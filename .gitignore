@@ -1,0 +1,5 @@
+.replit
+replit.nix
+mcbeaddonscreatorjs/node_modules
+mcbeaddonscreatorjs/package.json
+mcbeaddonscreatorjs/package-lock.json
