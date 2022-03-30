@@ -2,6 +2,6 @@
 #+DESCRIPTION: README to show how MCBEAddonCreatorJS
 #+AUTHOR: TheAwesomeGuy47
 
-[[https://img.shields.io/github/license/MCBEAddons/MCBEAddonCreatorJS?style=for-the-badge]]
+![](https://img.shields.io/github/license/MCBEAddons/MCBEAddonCreatorJS?style=for-the-badge)
 
 ** A simple, easy to use addon creator for Minecraft Bedrock.
