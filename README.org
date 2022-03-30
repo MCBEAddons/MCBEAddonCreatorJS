@@ -1,0 +1,6 @@
+#+TITLE: MCBEAddonCreatorJS
+#+DESCRIPTION: README to show how MCBEAddonCreatorJS
+#+AUTHOR: TheAwesomeGuy47
+
+* MCBEAddonCreatorJS
+ + A simple, easy to use addon creator for Minecraft Bedrock.
