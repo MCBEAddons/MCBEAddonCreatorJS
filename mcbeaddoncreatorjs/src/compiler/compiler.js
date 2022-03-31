@@ -1,7 +1,7 @@
 'use strict';
 
 const { v4: uuidv4 } = require('uuid');
-const fs = require('fs')
+const fs = require('fs');
 let standardRPManifest = {
   "format_version": 2,
   "header": {
@@ -79,39 +79,39 @@ let standardBPManifest = {
 class Compiler {
 
 	constructor() {
-        this.manifestRP = standardRPManifest
-        this.manifestBP = standardBPManifest
-        this.components = []
-    }
+        this.manifestRP = standardRPManifest;
+        this.manifestBP = standardBPManifest;
+        this.components = [];
+    };
 
 	setRPManifest(manifestRP) {
-        this.manifestRP = manifestRP
-        return this
-    }
+        this.manifestRP = manifestRP;
+        return this;
+    };
 
     setBPManifest(manifestBP) {
-        this.manifestBP = manifestBP
-        return this
-    }
+        this.manifestBP = manifestBP;
+        return this;
+    };
 
     setComponents(components) {
-        this.components = components
-        return this
-    }
+        this.components = components;
+        return this;
+    };
 	
 	compile() {
-		console.log('Compiling')
-		let data1 = JSON.stringify(this.manifestRP)
-		let data2 = JSON.stringify(this.manifestBP)
-    	fs.mkdirSync('./builds', { recursive: true })
-		fs.mkdirSync('./builds/rp', { recursive: true })
-		fs.mkdirSync('./builds/bp', { recursive: true })
+		console.log('Compiling');
+		let data1 = JSON.stringify(this.manifestRP);
+		let data2 = JSON.stringify(this.manifestBP);
+    	fs.mkdirSync('./builds', { recursive: true });
+		fs.mkdirSync('./builds/rp', { recursive: true });
+		fs.mkdirSync('./builds/bp', { recursive: true });
 		fs.writeFile('./builds/rp/manifest.json', data1, (err) => {console.log(err)});
 		fs.writeFile('./builds/bp/manifest.json', data2, (err) => {console.log(err)});
-		console.log('Compiled')
-		console.log('Thank you for using MCBE Addon Creator JS')
+		console.log('Compiled');
+		console.log('Thank you for using MCBE Addon Creator JS');
     }
 
 }
 
-module.exports = Compiler
+module.exports = Compiler;

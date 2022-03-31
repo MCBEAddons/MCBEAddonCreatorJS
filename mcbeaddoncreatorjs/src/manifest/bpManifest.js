@@ -5,31 +5,31 @@ const { v4: uuidv4 } = require('uuid');
 class BPManifest {
 
 	constructor() {
-        this.name = "MCBE Addon Creator JS"
-        this.description = "This addon was made using MCBE Addon Creator JS"
-        this.author = "Noinkin#5026, TheAwesomeGuy47#8156"
-		this.website = "MCBEAddons.tk"
-    }
+        this.name = "MCBE Addon Creator JS";
+        this.description = "This addon was made using MCBE Addon Creator JS";
+        this.author = "Noinkin#5026, TheAwesomeGuy47#8156";
+		this.website = "MCBEAddons.tk";
+    };
 
 	setName(name) {
-        this.name = name
-        return this
-    }
+        this.name = name;
+        return this;
+    };
 
     setDescription(description) {
-        this.description = description
-        return this
-    }
+        this.description = description;
+        return this;
+    };
 
     setAuthor(author) {
-        this.author = author
-        return this
-    }
+        this.author = author;
+        return this;
+    };
 
 	setWebsite(website) {
-        this.website = website
-        return this
-    }
+        this.website = website;
+        return this;
+    };
 	
 	toJSON() {
 		let jsonVer = {
@@ -67,9 +67,9 @@ class BPManifest {
     "url": this.website
   }
 	}
-	return JSON.stringify(jsonVer)
+	return JSON.stringify(jsonVer);
     }
 
 }
 
-module.exports = BPManifest
+module.exports = BPManifest;
