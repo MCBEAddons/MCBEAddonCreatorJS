@@ -109,6 +109,7 @@ class Compiler {
 		fs.writeFile('./builds/rp/manifest.json', data1, (err) => {console.log(err)});
 		fs.writeFile('./builds/bp/manifest.json', data2, (err) => {console.log(err)});
 		console.log('Compiled')
+		console.log('Thank you for using MCBE Addon Creator JS')
     }
 
 }
