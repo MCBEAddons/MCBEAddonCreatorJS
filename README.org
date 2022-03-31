@@ -1,5 +1,5 @@
 #+TITLE: MCBEAddonCreatorJS
-#+DESCRIPTION: README to show how MCBEAddonCreatorJS
+#+DESCRIPTION: README for the project MCBEAddonCreatorJS.
 #+AUTHOR: TheAwesomeGuy47
 
 [[https://img.shields.io/github/issues/MCBEAddons/MCBEAddonCreatorJS.svg?style=for-the-badge]]
@@ -7,4 +7,20 @@
 [[https://img.shields.io/github/stars/MCBEAddons/MCBEAddonCreatorJS.svg?style=for-the-badge]]
 [[https://img.shields.io/github/license/MCBEAddons/MCBEAddonCreatorJS.svg?style=for-the-badge]]
 
-** A simple, easy to use addon creator for Minecraft Bedrock.
+* Table Of Contents :toc:
+- [[#introduction][Introduction]]
+- [[#installation][Installation]]
+  - [[#installing-nodejs][Installing NodeJS]]
+
+* Introduction
+ MCBEAddonCreatorJS is a tool which enables you to use NodeJS, *simple* JavaScript code and create Minecraft Bedrock addons without typing JSON all day.
+ You can also make addons without having to comb through Microsoft's wacky and confusing documentation on how to make addons.
+ You won't even type *a single piece of JSON ever again.*
+
+* Installation
+ To install, we need to install NodeJS and
+ DISCLAIMER: The instructions can vary depending on the platform you are on.
+
+** Installing NodeJS
+*** Windows
+ 1. To install on Windows, head to [[https://nodejs.org][this site]] and click *"Windows Installer"*
