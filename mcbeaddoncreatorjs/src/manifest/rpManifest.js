@@ -2,7 +2,7 @@
 
 const { v4: uuidv4 } = require('uuid');
 
-class BPManifest {
+class RPManifest {
 
 	constructor() {
         this.name = "MCBE Addon Creator JS"
@@ -33,7 +33,7 @@ class BPManifest {
 	
 	toJSON() {
 		let jsonVer = {
-"format_version": 2,
+  "format_version": 2,
   "header": {
     "name": this.name,
     "description": this.description,
@@ -51,7 +51,7 @@ class BPManifest {
   },
   "modules": [
     {
-      "type": "data",
+      "type": "resources",
       "uuid": uuidv4(),
       "version": [
         1,
@@ -66,10 +66,10 @@ class BPManifest {
     ],
     "url": this.website
   }
-	}
+}
 	return JSON.stringify(jsonVer)
     }
 
 }
 
-module.exports = BPManifest
+module.exports = RPManifest
