@@ -3,6 +3,9 @@
 const { v4: uuidv4 } = require('uuid');
 
 class RPManifest {
+	/**
+	* @deprecated since dev-1.1.0
+	*/
 
 	constructor() {
         this.name = "MCBE Addon Creator JS";

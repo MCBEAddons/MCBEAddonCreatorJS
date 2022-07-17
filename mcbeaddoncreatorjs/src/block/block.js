@@ -5,13 +5,16 @@ let baseParamaters = {
 }
 
 class Block {
+	/**
+	* @deprecated since dev-1.1.0
+	*/
 
 	constructor() {
         this.name = "MCBE Addon Creator JS Block";
         this.id = 1000;
         this.textureFile = null;
         this.modelFile = null;
-		this.paramaters = baseParameters;
+		this.paramaters = baseParamaters;
     }
     setName(name) {
 		if (!typeof name === 'string') return console.error("String Error: Block name is not a string");

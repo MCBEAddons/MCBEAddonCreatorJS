@@ -76,7 +76,10 @@ let standardBPManifest = {
   }
 }
 
-class Compiler {
+class OldCompiler {
+	/**
+	* @deprecated since dev-1.1.0
+	*/
 
 	constructor() {
         this.manifestRP = standardRPManifest;
@@ -114,4 +117,4 @@ class Compiler {
 
 }
 
-module.exports = Compiler;
+module.exports = OldCompiler;
