@@ -2,6 +2,9 @@
 
 const { v4: uuidv4 } = require('uuid');
 
+/**
+ * @author Noinkin
+ */
 class Manifest {
 	/**
 	 * Create the Manifest Class.

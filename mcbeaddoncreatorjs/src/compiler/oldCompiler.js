@@ -76,10 +76,13 @@ let standardBPManifest = {
   }
 }
 
+/**
+ * @author Noinkin
+ */
 class OldCompiler {
 	/**
-	* @deprecated since dev-1.1.0
-	*/
+	 * @deprecated since dev-1.1.0
+	 */
 
 	constructor() {
         this.manifestRP = standardRPManifest;
