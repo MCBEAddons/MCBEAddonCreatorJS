@@ -4,7 +4,7 @@ let baseParamaters = {
 	toCome: "Soon"
 }
 
-class Block {
+class OldBlock {
 	/**
 	* @deprecated since dev-1.1.0
 	*/
@@ -54,4 +54,4 @@ model file: ${this.modelFile}`
 
 }
 
-module.exports = Block
+module.exports = OldBlock

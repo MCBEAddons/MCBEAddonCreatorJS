@@ -1,12 +1,13 @@
 'use strict';
 
 /* Block Classes */
-exports.Block = require('./block/block');
+exports.OldBlock = require('./block/oldBlock');
 
 
 /* Compile Classes */
-exports.Compiler = require('./compiler/compiler');
+exports.OldCompiler = require('./compiler/oldCompiler');
 
 /* Manifest Classes */
-exports.BPManifest = require('./manifest/bpmanifest');
-exports.RPManifest = require('./manifest/rpmanifest');
+exports.BPManifest = require('./manifest/bpManifest');
+exports.RPManifest = require('./manifest/rpManifest');
+exports.Manifest = require('./manifest/manifest')
