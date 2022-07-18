@@ -1,6 +1,6 @@
 {
   "name": "mcbeaddoncreatorjs",
-  "version": "1.0.11",
+  "version": "1.1.0-dev",
   "description": "A MCBE Addon creator package for NodeJS",
   "main": "./src/index.js",
   "scripts": {
