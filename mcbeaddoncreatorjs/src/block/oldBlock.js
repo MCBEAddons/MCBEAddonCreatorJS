@@ -1,12 +1,16 @@
 'use strict';
 
+/**
+ * @file Creates a block
+ * @author Noinkin
+ * @copyright MCBEAddons
+ */
+
 let baseParamaters = {
 	toCome: "Soon"
 }
 
-/**
- * @author Noinkin
- */
+
 class OldBlock {
 	/**
 	 * @deprecated since dev-1.1.0

@@ -1,10 +1,13 @@
 'use strict';
 
+/**
+ * @file Creates a BP Manifest
+ * @author Noinkin
+ * @copyright MCBEAddons
+ */
+
 const { v4: uuidv4 } = require('uuid');
 
-/**
- * @author Noinkin
- */
 class BPManifest {
 	/**
 	 * @deprecated since dev-1.1.0

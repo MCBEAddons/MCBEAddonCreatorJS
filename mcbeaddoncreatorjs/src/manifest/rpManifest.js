@@ -1,10 +1,13 @@
 'use strict';
 
+/**
+ * @file Creates the RP Manifest
+ * @author Noinkin
+ * @copyright MCBEAddons
+ */
+
 const { v4: uuidv4 } = require('uuid');
 
-/**
- * @author Noinkin
- */
 class RPManifest {
 	/**
 	 * @deprecated since dev-1.1.0

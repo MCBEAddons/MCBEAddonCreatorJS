@@ -1,92 +1,97 @@
 'use strict';
 
+/**
+ * @file Compiles everything
+ * @author Noinkin
+ * @copyright MCBEAddons
+ */
+
 const { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
-let standardRPManifest = {
-  "format_version": 2,
-  "header": {
-    "name": "MCBE Addon Creator JS Addon RP",
-    "description": "This addon was made using MCBE Addon Creator JS",
-    "uuid": uuidv4(),
-    "version": [
-      1,
-      0,
-      0
-    ],
-    "min_engine_version": [
-      1,
-      17,
-      0
-    ]
-  },
-  "modules": [
-    {
-      "type": "resources",
-      "uuid": uuidv4(),
-      "version": [
-        1,
-        0,
-        0
-      ]
-    }
-  ],
-  "metadata": {
-    "authors": [
-      "Noinkin#5026",
-	  "TheAwesomeGuy47#8156"
-    ],
-    "url": "MCBEAddons.tk"
-  }
-}
 
-let standardBPManifest = {
-  "format_version": 2,
-  "header": {
-    "name": "MCBE Addon Creator JS Addon",
-    "description": "This addon was made using MCBE Addon Creator JS",
-    "uuid": uuidv4(),
-    "version": [
-      1,
-      0,
-      0
-    ],
-    "min_engine_version": [
-      1,
-      17,
-      0
-    ]
-  },
-  "modules": [
-    {
-      "type": "data",
-      "uuid": uuidv4(),
-      "version": [
-        1,
-        0,
-        0
-      ]
-    }
-  ],
-  "metadata": {
-    "authors": [
-      "Noinkin#5026",
-	  "TheAwesomeGuy47#8156"
-    ],
-    "url": "MCBEAddons.tk"
-  }
-}
-
-/**
- * @author Noinkin
- */
 class OldCompiler {
 	/**
 	 * @deprecated since dev-1.1.0
 	 */
 
 	constructor() {
-        this.manifestRP = standardRPManifest;
-        this.manifestBP = standardBPManifest;
+		/** @protected */
+		this._standardRPManifest = {
+  			"format_version": 2,
+  			"header": {
+    			"name": "MCBE Addon Creator JS Addon RP",
+    			"description": "This addon was made using MCBE Addon Creator JS",
+    			"uuid": uuidv4(),
+    			"version": [
+      				1,
+      				0,
+      				0
+    			],
+    			"min_engine_version": [
+      				1,
+      				17,
+      				0
+    			]
+  			},
+  			"modules": [
+    			{
+      				"type": "resources",
+      				"uuid": uuidv4(),
+      				"version": [
+        				1,
+        				0,
+       					0
+      				]
+    			}
+  			],
+  			"metadata": {
+    			"authors": [
+      				"Noinkin#5026",
+	  				"TheAwesomeGuy47#8156"
+    			],
+    			"url": "MCBEAddons.tk"
+  			}
+		}
+
+		/** @protected */
+		this._standardBPManifest = {
+  			"format_version": 2,
+ 			"header": {
+   				"name": "MCBE Addon Creator JS Addon",
+    			"description": "This addon was made using MCBE Addon Creator JS",
+    			"uuid": uuidv4(),
+    			"version": [
+      				1,
+      				0,
+      				0
+    			],
+    			"min_engine_version": [
+      				1,
+      				17,
+      				0
+    			]
+  			},
+  			"modules": [
+    			{
+      				"type": "data",
+      				"uuid": uuidv4(),
+      				"version": [
+        				1,
+        				0,
+       	 				0
+      				]
+    			}
+  			],
+  			"metadata": {
+    			"authors": [
+      				"Noinkin#5026",
+	  				"TheAwesomeGuy47#8156"
+    			],
+    			"url": "MCBEAddons.tk"
+ 			}
+		}
+        this.manifestRP = this._standardRPManifest;
+        this.manifestBP = this._standardBPManifest;
         this.components = [];
     };
 
@@ -118,6 +123,7 @@ class OldCompiler {
 		console.log('Thank you for using MCBE Addon Creator JS');
     }
 
+	
 }
 
 module.exports = OldCompiler;

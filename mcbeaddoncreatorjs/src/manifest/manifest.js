@@ -1,13 +1,23 @@
 'use strict';
 
+/**
+ * @file Creates both Manifests
+ * @author Noinkin
+ * @copyright MCBEAddons
+ */
+
 const { v4: uuidv4 } = require('uuid');
 
 /**
- * @author Noinkin
+ * @class
+ * @classdesc The Main Manifest of the addon
  */
 class Manifest {
 	/**
 	 * Create the Manifest Class.
+	 * @example
+	 * // Creates the addon
+	 * const manifest = new Manifest()
 	 */
 	constructor() {
         this.name = "MCBE Addon Creator JS";
@@ -19,6 +29,9 @@ class Manifest {
 	/**
 	 * Set a name for the addon
 	 * @param {string} name - The name of the addon
+	 * @example
+	 * // Sets the name of the addon
+	 * manifest.setName('MyAddonName')
 	 */
 	setName(name) {
         this.name = name;
@@ -28,6 +41,9 @@ class Manifest {
 	/**
 	 * Set a description for the addon
 	 * @param {string} description - The description of the addon
+	 * @example
+	 * // Sets the description of the addon
+	 * manifest.setDescription('MyAddonDescription')
 	 */
     setDescription(description) {
         this.description = description;
@@ -37,6 +53,9 @@ class Manifest {
 	/**
 	 * Set an author for the addon
 	 * @param {string} author - The author of the addon
+	 * @example
+	 * // Sets the author of the addon
+	 * manifest.setAuthor('MyAddonAuthor')
 	 */
     setAuthor(author) {
         this.author = author;
@@ -46,6 +65,9 @@ class Manifest {
 	/**
 	 * Set a website for the addon
 	 * @param {string} website - The website of the addon
+	 * @example
+	 * // Sets the website of the addon
+	 * manifest.setWebsite('MyAddonWebsite')
 	 */
 	setWebsite(website) {
         this.website = website;
@@ -54,6 +76,9 @@ class Manifest {
 
 	/**
 	 * Get the BP Manifest
+	 * @example
+	 * // Gets the BP of the addon
+	 * manifest.toJSONBP()
 	 * @return {object} The BP Manifest
 	 */
 	toJSONBP() {
@@ -97,6 +122,9 @@ class Manifest {
 
 	/**
 	 * Get the RP Manifest
+	 * @example
+	 * // Gets the RP of the addon
+	 * manifest.toJSONRP()
 	 * @return {object} The RP Manifest
 	 */
 	toJSONRP() {

@@ -4,7 +4,8 @@
   "description": "A MCBE Addon creator package for NodeJS",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"jsdoc": "jsdoc ./src/manifest.js"
   },
   "author": "Noinkin",
   "license": "ISC",
