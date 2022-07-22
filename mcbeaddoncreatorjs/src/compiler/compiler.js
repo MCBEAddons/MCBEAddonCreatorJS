@@ -23,9 +23,6 @@ class Compiler extends StandardManifests {
         return this;
     };
 
-	/**
-	 * @ignore
-	 */
 	compile() {
 		// Update Soon.
 		console.log('MCBE Addons is compiling your addon. Please wait...');
