@@ -4,10 +4,11 @@
 exports.OldBlock = require('./block/oldBlock');
 
 
-/* Compile Classes */
+/* Compiler Classes */
 exports.OldCompiler = require('./compiler/oldCompiler');
+exports.Compiler = require('./compiler/compiler.js');
 
 /* Manifest Classes */
 exports.BPManifest = require('./manifest/bpManifest');
 exports.RPManifest = require('./manifest/rpManifest');
-exports.Manifest = require('./manifest/manifest')
+exports.Manifest = require('./manifest/manifest');
