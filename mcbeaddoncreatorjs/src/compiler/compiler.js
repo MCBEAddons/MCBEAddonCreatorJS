@@ -13,8 +13,8 @@ class Compiler extends StandardManifests {
 	// JSDoc Tags soon.
 
 	constructor() {
-        this.manifestRP = this.RP();
-        this.manifestBP = this.BP();
+        this.manifestRP = this.RP;
+        this.manifestBP = this.BP;
     };
 
 	setManifest(manifest) {

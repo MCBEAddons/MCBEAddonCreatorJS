@@ -1,34 +1,24 @@
-```
-  __  __  ___ ___ ___     _   ___  ___   ___  _  _ 
- |  \/  |/ __| _ ) __|   /_\ |   \|   \ / _ \| \| |
- | |\/| | (__| _ \ _|   / _ \| |) | |) | (_) | .` |
- |_|  |_|\___|___/___| /_/ \_\___/|___/ \___/|_|\_|
-
-  ___ ___ ___   _ _____ ___  ___      _ ___ 
- / __| _ \ __| /_\_   _/ _ \| _ \  _ | / __|
-| (__|   / _| / _ \| || (_) |   / | || \__ \
- \___|_|_\___/_/ \_\_| \___/|_|_\  \__/|___/
-```
-
 ## Minecraft Bedrock Edition Addon Creator JS is a tool which allows you to use NodeJS and create addons without having to type JSON all day.
 
 ```js
-const { Block, Compiler, BPManifest } = require('mcbeaddoncreatorjs')
+const { CustomGeoBlock, BlockRow, Compiler, Manifest } = require('mcbeaddoncreatorjs')
 
-const block = new Block()
+const block = new CustomGeoBlock()
 	.setName('MyBlock')
-	.setId(1000)
+	.setIdentifier('my:block')
 	.setTextureFile('./assets/myBlock.png')
 	.setModelFile('./assets/myBlock.geo.json')
 
-const bpManifest = new BPManifest()
+ const blockRow = new BlockRow()
+	 .setBlocks({ blocks: [ block ] })
+
+const manifest = new Manifest()
 	.setName('My addon')
 	.setDescription('My addon description')
 	.setAuthor('Example')
 	.setWebsite('Example.com')
 
  const compiler = new Compiler()
-	.setBPManifest(bpManifest.toJSON())
-	.setRPManifest(rpManifest.toJSON())
-	.setComponents([ block ])
+	.setManifest(manifest.toJSON())
+	.setBlocks({ blocks: [ blockRow ] })
 ```
